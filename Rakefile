@@ -10,7 +10,9 @@ task :convert do
     codes[array[1]] = {
       state_code: array[4],
       state_name: array[3],
-      city: array[2]
+      city: array[2],
+      latitude: array[9].to_f,
+      longitude: array[10].to_f
     }
   end
 
